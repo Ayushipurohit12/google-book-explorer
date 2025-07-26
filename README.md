@@ -1,5 +1,3 @@
----
-
 ````markdown
 # 📚 Book Explorer
 
@@ -145,7 +143,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 * React Router
 * React Icons
 * [StoryMirror](https://storymirror.com) — Sample book inspiration
-
-```
 
 
