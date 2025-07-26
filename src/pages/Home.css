@@ -1,0 +1,45 @@
+.home-page {
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Responsive grid layout for BookCards */
+.books-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+/* Loading & empty message styles */
+.loading-message,
+.no-results-message {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border: 1px dashed #cbd5e0;
+  border-radius: 10px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 2rem 1rem;
+  }
+
+  .books-grid {
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+}

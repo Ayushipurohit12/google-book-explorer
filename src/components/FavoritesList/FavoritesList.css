@@ -1,0 +1,73 @@
+.favorites-list {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.favorites-list h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a202c;
+  text-align: center;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 2rem;
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 0.5rem;
+}
+
+/* Ensure BookCard takes full height in cell */
+.favorites-grid > * {
+  display: flex;
+  height: 100%;
+}
+
+.empty-message {
+  font-size: 1.1rem;
+  color: #4a5568;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  padding: 2rem 1.25rem;
+  border-radius: 12px;
+  border: 1px dashed #cbd5e0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+/* Medium screen: 2 books per row */
+@media (max-width: 1024px) {
+  .favorites-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screen: 1 book per row */
+@media (max-width: 640px) {
+  .favorites-list {
+    padding: 2rem 1rem;
+  }
+
+  .favorites-list h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .favorites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .empty-message {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+}
